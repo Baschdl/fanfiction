@@ -62,7 +62,7 @@ class Scraper:
         metadata = {
             'id': story_id,
             'canon_type': pre_story_links[0].text,
-            'canon': pre_story_links[1].text,
+            'canon': pre_story_links[-1].text,
             'author_id': author_id,
             'title': title,
             'lang': metadata_parts[1].strip(),
